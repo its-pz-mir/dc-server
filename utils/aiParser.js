@@ -6,7 +6,7 @@ async function callGeminiWithRetry(prompt, retries = 3, delayMs = 800) {
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
       const response = await ai.models.generateContent({
-        model: 'gemini-3.5-flash',
+        model: 'gemini-3.5-flash-lite',
         contents: prompt,
         config: { responseMimeType: 'application/json' }
       });
