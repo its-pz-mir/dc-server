@@ -21,7 +21,7 @@ app.use(
     },
   }),
 );
-app.use(cors(["http://10.71.89.178:3000", "http://localhost:3000"]));
+app.use(cors(["http://10.71.89.178:3000", "http://localhost:3000", "https://saddlebrown-gull-698508.hostingersite.com"]));
 
 // MongoDB Connection using your legacy URI string
 const MONGO_URI = process.env.MONGO_URI;
